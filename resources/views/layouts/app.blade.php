@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="{{ asset('css/select.css') }}">
     <link rel="stylesheet" href="{{ asset('css/list.css') }}">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title')</title>
 </head>
+
 <body>
     <div class="container">
         @yield('container')
